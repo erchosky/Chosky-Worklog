@@ -1,8 +1,12 @@
 # Chosky Worklog
 
-Aplicación nativa y privada de registro de trabajo para macOS, construida sobre
-ActivityWatch. El punto de entrada es una única aplicación:
-`Chosky Worklog.app`.
+Registro local de trabajo para macOS construido sobre ActivityWatch. Reúne sesiones, seguimiento de actividad, capturas e informes en una aplicación nativa.
+
+La versión 0.1.0 incluye persistencia, copias de seguridad y un panel temporal. Revisa [las limitaciones conocidas](docs/KNOWN_LIMITATIONS.md) antes de utilizar sus informes como evidencia contractual.
+
+[Estado](#estado) · [Compilación](#compilación) · [Privacidad](#privacidad) · [Licencia](#licencia)
+
+---
 
 ## Estado
 
@@ -12,7 +16,7 @@ implementados. Consulta [KNOWN_LIMITATIONS.md](docs/KNOWN_LIMITATIONS.md) antes
 de usarla como evidencia contractual. La auditoría correctiva más reciente está
 en [AUDIT_2026-07-31.md](docs/AUDIT_2026-07-31.md).
 
-## Construir
+## Compilación
 
 Requisitos de desarrollo comprobados:
 
