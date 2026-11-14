@@ -1,0 +1,90 @@
+# Exclusiones aplicadas al ZIP limpio de Chosky Worklog
+#
+# Las rutas son relativas a la raíz "APLICACION VIGIL". Se conserva .git y la
+# fuente de todos los submódulos.
+
+# Auditoría y descargas temporales
+.audit-upstream/
+.audit-venv/
+
+# Productos compilados y paquetes regenerables
+dist/
+build/
+**/build/
+**/.build/
+**/.swiftpm/
+**/DerivedData/
+**/target/
+**/node_modules/
+**/.next/
+**/.nuxt/
+**/.svelte-kit/
+**/.vite/
+**/.turbo/
+**/.parcel-cache/
+**/.cache/
+**/ModuleCache/
+**/coverage/
+**/.nyc_output/
+**/storybook-static/
+
+# Runtime oficial regenerable; se recupera con make chosky-fetch-resources
+ChoskyWorklog/Resources/ActivityWatch/
+
+# Entornos y caches
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.tox/
+**/.nox/
+**/.gradle/
+**/xcuserdata/
+**/*.pyc
+
+# Artefactos y archivos locales
+.DS_Store
+*.dmg
+*.zip
+*.log
+*.pid
+*.tmp
+**/*.app/
+**/*.dmg
+**/*.zip
+**/*.log
+**/*.pid
+**/*.sock
+**/*.tmp
+**/*.swp
+**/.DS_Store
+**/Thumbs.db
+
+# Datos personales o de ejecución
+*.db
+*.sqlite
+*.sqlite3
+*.heic
+*.mov
+*.mp4
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+**/*.heic
+**/*.mov
+**/*.mp4
+
+# Secretos y credenciales locales
+.env
+.env.*
+**/.env
+**/.env.*
+!/.env.example
+**/*.p12
+**/*.pfx
+**/*private*.key
+
+# Locks transitorios de Git; los lockfiles declarativos sí se conservan
+.git/**/*.lock
